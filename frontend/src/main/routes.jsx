@@ -1,13 +1,14 @@
 import React from 'react'
-import {Router, Route, Redirect, hasHistory} from 'react-router'
-
+import ReactDOM from 'react-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Todo from '../todo/todo'
-import About from '../aboute/about'
+import About from '../about/about'
 
 export default props => (
-  <Router history={hasHistory}>
-    <Route path="/todos" component={Todo} />
-    <Route path="/about" component={About} />
-    <Redirect from="*" to="/todos"/>
-  </Router>
+  <BrowserRouter>
+    <Switch>
+      <Route path="/todos" component={Todo} />
+      <Route path="/about" component={About} />
+    </Switch>
+  </BrowserRouter>
 )
