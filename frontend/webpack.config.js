@@ -23,7 +23,7 @@ module.exports = {
   module:{
     loaders:[{
       test: /\.js?/,
-      loader: 'babel',
+      loader: 'babel-loader',
       exclude: /node_modules/,
       query:{
         presets: ['es2015', 'react'],
@@ -34,7 +34,7 @@ module.exports = {
       loader:ExtractTextPlugin.extract('style-loader', 'css-loader')
 
     }, {
-      test: /\.woff|.woff2|.eot|.svg*.*$/,
+      test: /\.woff|.woff2|.ttf|.eot|.svg*.*$/,
       loader: 'file'
     }]
   }
