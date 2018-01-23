@@ -1,10 +1,12 @@
 import React from 'react'
 import Menu from '../template/menu'
-import Routes from './routes'
+import About from '../about/about'
+import Todo from '../todo/todo'
+import Router from './routes'
 
 export default props =>(
   <div className="container">
-    <Menu />  
-    <Routes />
+    <Menu />
+    <Router />
   </div>
 )
