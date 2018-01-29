@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default props =>(
-  <div>
+  <div className="container">
     <h1>Todolist</h1>
   </div>
 )

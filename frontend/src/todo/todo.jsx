@@ -19,13 +19,13 @@ export default class Todo extends Component{
 
   handleChange(e) {
     this.setState({...this.state, description: e.target.value })
-
+    console.log(e.target.value)
   }
 
   handleAdd() {
     const description = this.state.description
     axios.post(URL, { description })
-      .then(resp => console.log("Funcionou"))
+      .then(resp => console.log('Funcionou'))
   }
 
   render(){
