@@ -15,6 +15,12 @@ export default class Todo extends Component{
     }
     this.handleAdd = this.handleAdd.bind(this)
     this.handleChange = this.handleChange.bind(this)
+
+  }
+
+  refresh() {
+    axios.get(URL,'${URL}?Sort=-createdAt')
+      .then( resp => console.log(resp.data))
   }
 
   handleChange(e) {
