@@ -1,7 +1,23 @@
 import React from 'react'
 
-export default props =>(
-  <div className="container">
-    <h1>Todolist</h1>
-  </div>
-)
+export default props =>{
+
+  return(
+
+    <table className="table">
+
+      <thead>
+
+        <tr>
+          <th>Descrição</th>
+        </tr>
+        
+      </thead>
+
+      <tbody>
+        {renderRows()}
+      </tbody>
+
+    </table>
+  )
+}
