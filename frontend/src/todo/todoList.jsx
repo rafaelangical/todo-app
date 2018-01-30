@@ -2,6 +2,15 @@ import React from 'react'
 
 export default props =>{
 
+  const renderRows = () =>{
+    const list = props.list || []
+    return list.map( todo => (
+      <tr>
+        <td>{ todo.description }</td>
+      </tr>
+    ))
+  }
+
   return(
 
     <table className="table">
@@ -11,7 +20,7 @@ export default props =>{
         <tr>
           <th>Descrição</th>
         </tr>
-        
+
       </thead>
 
       <tbody>
