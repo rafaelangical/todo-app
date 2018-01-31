@@ -1,9 +1,10 @@
 import React from 'react'
 
-export default props =>{
+export default props => {
 
   const renderRows = () =>{
     const list = props.list || []
+    
     return list.map( todo => (
       <tr>
         <td>{ todo.description }</td>
