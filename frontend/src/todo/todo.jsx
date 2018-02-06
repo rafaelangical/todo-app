@@ -15,7 +15,7 @@ export default class Todo extends Component{
     }
     this.handleAdd = this.handleAdd.bind(this)
     this.handleChange = this.handleChange.bind(this)
-
+    this.handleRemove = this.handleRemove.bind(this)
     this.refresh()
 
   }
