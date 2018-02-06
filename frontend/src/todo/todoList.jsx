@@ -22,6 +22,7 @@ export default props => {
 
         <tr>
           <th>Descrição</th>
+          <th>Ações</th>
         </tr>
 
       </thead>
