@@ -1,4 +1,5 @@
 import React from 'react'
+import IconButton from '../template/iconButton'
 
 export default props => {
 
@@ -10,6 +11,12 @@ export default props => {
         <td key={todo._id}>
           { todo.description }
         </td>
+        <td>
+          <IconButton style="danger"
+            icon="trash-o"
+            onClick={() => props.handleRemove(todo)}>
+          </IconButton>
+        </td>
       </tr>
     ))
   }
@@ -19,7 +26,6 @@ export default props => {
     <table className="table">
 
       <thead>
-
         <tr>
           <th>Descrição</th>
           <th>Ações</th>
