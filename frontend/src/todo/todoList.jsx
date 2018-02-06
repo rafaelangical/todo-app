@@ -7,7 +7,9 @@ export default props => {
     
     return list.map( todo => (
       <tr>
-        <td>{ todo.description }</td>
+        <td key={todo._id}>
+          { todo.description }
+        </td>
       </tr>
     ))
   }
