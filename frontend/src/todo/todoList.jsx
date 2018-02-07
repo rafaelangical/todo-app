@@ -1,5 +1,6 @@
 import React from 'react'
 import IconButton from '../template/iconButton'
+import '../template/customCss.css'
 
 export default props => {
 
@@ -13,17 +14,20 @@ export default props => {
           <IconButton 
             style="sucess" 
             icon="check"
-            onClick={() => props.handleMarkAsDone(todo)}>
+            onClick={() => props.handleMarkAsDone(todo)}
+            className="btn">
           </IconButton> 
           <IconButton
             style="warning"
             icon="undo"
-            onClick={()=> props.handleMarkAsPending(todo)}>
+            onClick={()=> props.handleMarkAsPending(todo)}
+            className="btn">
           </IconButton>
           <IconButton 
             style="danger" 
             icon="trash-o"
-            onClick={() => props.handleRemove(todo)}>
+            onClick={() => props.handleRemove(todo)}
+            className="btn">
           </IconButton>
         </td>
       </tr>
