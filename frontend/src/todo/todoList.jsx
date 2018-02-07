@@ -15,7 +15,8 @@ export default props => {
             style="sucess" 
             icon="check"
             onClick={() => props.handleMarkAsDone(todo)}
-            className="btn">
+            className="btn"
+            hide={todo.done}>
           </IconButton> 
           <IconButton
             style="warning"
