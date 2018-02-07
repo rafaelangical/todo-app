@@ -1,5 +1,9 @@
+body{
+  font-size: 2em;
+}
 .markAsDone{
-  color:blue;
+  text-decoration: line-through;
+  color:red;
 }
 
 .btn{
