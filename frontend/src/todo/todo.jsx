@@ -23,9 +23,9 @@ export default class Todo extends Component{
 
   }
 
-  refresh(description = ) {
+  refresh(description = '') {
     const search = description ? `&description__regex=/${description}/` : ''
-    axios.get(URL,'${URL}?Sort=-createdAt${search}')
+    axios.get(URL,`${URL}?Sort=-createdAt${search}`)
       .then( resp => this.setState({...this.state, description: '', list: resp.data }))
   }
 
@@ -66,7 +66,8 @@ export default class Todo extends Component{
         <TodoForm description={this.state.description}
           handleChange={this.handleChange}
           handleAdd={this.handleAdd} 
-          handleSearch={this.handleSearch}/>
+          handleSearch={this.handleSearch}
+        />
         <TodoList list={this.state.list} 
           handleRemove={this.handleRemove}
           handleMarkAsDone={this.handleMarkAsDone}
