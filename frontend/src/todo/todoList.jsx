@@ -22,7 +22,8 @@ export default props => {
             style="warning"
             icon="undo"
             onClick={()=> props.handleMarkAsPending(todo)}
-            className="btn">
+            className="btn"
+            hide={!todo.done}>
           </IconButton>
           <IconButton 
             style="danger" 
