@@ -5,14 +5,13 @@ export default props => {
 
   const renderRows = () =>{
     const list = props.list || []
-    
+        
     return list.map( todo => (
-      <tr>
-        <td key={todo._id}>
-          { todo.description }
-        </td>
+      <tr key={todo._id}>
+        <td>{todo.description}</td>
         <td>
-          <IconButton style="danger"
+          <IconButton 
+            style="danger" 
             icon="trash-o"
             onClick={() => props.handleRemove(todo)}>
           </IconButton>
@@ -20,6 +19,7 @@ export default props => {
       </tr>
     ))
   }
+
 
   return(
 
