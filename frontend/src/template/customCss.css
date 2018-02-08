@@ -9,3 +9,11 @@ body{
 .btn{
   margin: 1%;
 }
+
+.tableActions{
+  width: 105px;
+}
+
+.todoForm{
+  padding: 5% 5% 5% 5%;
+}
