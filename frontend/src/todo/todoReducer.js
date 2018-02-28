@@ -1,5 +1,5 @@
 const INITIAL_STATE = {
-  description: 'Ler Livro',
+  description: '',
   list: [{
     _id: 1,
     description: 'Descricao 1',
