@@ -48,5 +48,6 @@ const TodoForm = props => {
 const mapStateToProps = state => ({
   description: state.todo.description
 })
+const mapDispatchToProps = dispatch => bindActionCreators({ changeDescription}, dispatch)
 
 export default connect(mapStateToProps)(TodoForm)
