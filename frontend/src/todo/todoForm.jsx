@@ -50,4 +50,4 @@ const mapStateToProps = state => ({
 })
 const mapDispatchToProps = dispatch => bindActionCreators({ changeDescription}, dispatch)
 
-export default connect(mapStateToProps)(TodoForm)
+export default connect(mapStateToProps, mapDispatchToProps)(TodoForm)
